@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>導航</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body id="body">
+  	    <div id="map"></div>
+    <div style="display: none">
+      <input
+        id="origin-input"
+        class="controls"
+        type="text"
+        placeholder="原始地點"
+      />
+
+      <input
+        id="destination-input"
+        class="controls"
+        type="text"
+        placeholder="目的位置"
+      />
+
+	  <div id="mode-selector" class="controls" style="background-color: 	#003060;">
+
+	     <input type="radio" name="type" id="changemode-walking"checked="checked"/>
+	     <label  for="changemode-walking">走路</label>
+
+	     <input type="radio" name="type" id="changemode-transit" />
+	     <label for="changemode-transit">交通工具</label>
+
+	     <input type="radio" name="type" id="changemode-driving" />
+	     <label for="changemode-driving">開車&nbsp;</label>
+	  
+	  </div>
+    </div>
+
+
+
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKkZxTmiWZqJSILFY7zDS76j3-K-WlkpQ&callback=initMap&libraries=places&v=weekly"
+      async
+
+
+
+    >
+
+    </script>
+
+
+
+  </body>
+</html>
+
